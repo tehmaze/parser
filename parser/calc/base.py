@@ -237,3 +237,8 @@ def nud(self):
 @calc.method(calc.symbol('pow'))
 def nud(self):
     return math.pow(self.expression(), self.expression())
+
+# aliases
+calc.alias('deg', 'degrees')
+calc.alias('fac', 'factorial')
+calc.alias('rad', 'radians')

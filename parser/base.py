@@ -40,6 +40,9 @@ class Parser(object):
             s.lbp = max(bp, s.lbp)
         return s
 
+    def alias(self, alias, ident):
+        self.symbols[alias] = self.symbols[ident]
+
     # Helper functions
 
     def infix(self, ident, bp):
